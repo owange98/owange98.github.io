@@ -1,0 +1,112 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('/Images/TransFlagIcon.png');
+      background-repeat: repeat; /* Make the image repeat */
+      background-position: top left; /* Position at the top-left corner */
+      background-size: auto; /* Keep the image size as is */
+      color: #333;
+    }
+
+    .navbar {
+      height: 50px;
+      background-color: #ff8400;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .navbar a.logo {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+
+    .navbar a.logo img {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+    }
+
+    .navbar a.home-button {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 16px;
+      background-color: #ff8400; /* Always orange */
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .navbar a.home-button:hover {
+      background-color: #ff6000; /* Darker orange on hover */
+      color: white;
+    }
+
+    .content {
+      margin-top: 70px; /* Account for navbar height */
+      padding: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+      border-radius: 8px;
+    }
+
+    .content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+
+      .navbar a.home-button {
+        font-size: 14px;
+        padding: 6px 12px;
+      }
+
+      .content {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="/" class="logo">
+      <img src="/Images/owange1024x1024.png" alt="Logo">
+    </a>
+    
+    <a href="/" class="home-button">Home</a>
+  </div>
+
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>
+      This is a WIP website that is coming soon. Thanks for visiting.
+    </p>
+  </div>
+
+
+
+</body></html>
